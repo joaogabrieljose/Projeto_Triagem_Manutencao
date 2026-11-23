@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/Users/Licenciatura/2ano_3ano/Iº semestre/inteligencia artificial/pratica/Trabalho_IA/.venv/bin/python" "$0" "$@"
+' '''
+import sys
+from notebook.app import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
